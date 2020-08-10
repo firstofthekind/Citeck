@@ -19,7 +19,7 @@ public class Num {
         });
         // Сортировка по количеству вхождений
         map.entrySet().stream()
-                .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
+                .sorted(Map.Entry.<Integer, Integer>comparingByValue())
                 .forEach(System.out::println);
     }
 }
